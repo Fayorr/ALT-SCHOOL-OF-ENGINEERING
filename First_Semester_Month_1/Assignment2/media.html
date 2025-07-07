@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Media</title>
+	</head>
+	<body>
+		<h1>Media</h1>
+		<h2>Meet Fayo – Aspiring Frontend Engineer</h2>
+
+		<picture>
+			<source
+				srcset="./assets/fayo-laptop.jpg"
+				media="(min-width: 1024px)"
+			/>
+			<source
+				srcset="./assets/fayo-tablet.jpg"
+				media="(min-width: 768px)"
+			/>
+			<source
+				srcset="./assets/fayo-mobile.png"
+				media="(min-width: 480px)"
+			/>
+			<source
+				srcset="./assets/fayo-small.JPG"
+				media="(max-width: 479px)"
+			/>
+			<img
+				width="300"
+				height="400"
+				src="./assets/fayo-mobile.png"
+				alt="Fayo, building the future of the web"
+			/>
+		</picture>
+
+		<p>
+			I am Fayo, a passionate Frontend Engineer with a love for dynamic
+			websites. I believe in building beautiful user interfaces that solve real
+			problems and inspire users.
+		</p>
+		<br />
+		<p>Here is an example of the img element (I want to work at Google)</p>
+		<img
+			src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+			alt="Google Logo"
+		/>
+		<br />
+		<p>Here is an example of the video element</p>
+		<video
+			width="320"
+			height="240"
+			controls
+		>
+			<source
+				src="https://rr1---sn-5hne6n6e.googlevideo.com/videoplayback?expire=1751933482&ei=yg1saPjaHIjBmLAP2--y8Qg&ip=188.72.15.150&id=o-AHQunIo68zv_OYCFdpfUYuLvW9wtDDYmhfIccPKGG9r8&itag=18&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&bui=AY1jyLP5Y6_HZeMOWCBoFE2IUWVdo9l2qkbyC__O0_VARp52qQwXnoLuzm9MpDhLl4qtnH_ZN9QHy5zQ&spc=l3OVKf7OGI9d8eBHvV6b_qoXCccvDvtx5rzyqa6QfScGWokK8BKwI53tcyr27qosql8Pkw&vprv=1&svpuc=1&mime=video%2Fmp4&ns=jNjKCAGrYqBJL_RAI-n2m0QQ&rqh=1&gir=yes&clen=3602277&ratebypass=yes&dur=66.362&lmt=1751908218280016&fexp=24350590,24350737,24350827,24350961,24351316,24351318,24351528,24351907,24352157,24352220,24352236,24352322,24352334,24352336,24352394,24352396,24352457,24352460,24352466,24352517,24352519,24352531,24352533,51331020&c=MWEB&sefc=1&txp=6309224&n=fYnrHc4B3CmXoQ&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cbui%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Cns%2Crqh%2Cgir%2Cclen%2Cratebypass%2Cdur%2Clmt&sig=AJfQdSswRgIhAOsNks97i1RZjZ48x3zHcyhQXle4NRJ8bozow0uGl-oXAiEApf6oju5f4i4uYucj0n1viCL7jH--o_taH6Rh2toh3ZM%3D&title=Central%20Texas%20Hit%20With%20Devastating%20Floods&rm=sn-5an5gq4pcxg-xcaz7l,sn-nv4s67s&rrc=79,104,191&req_id=dfe020baa1b4a3ee&rms=rdu,au&ipbypass=yes&redirect_counter=3&cm2rm=sn-aige6l76&cms_redirect=yes&cmsv=e&met=1751911893,&mh=LO&mip=102.89.32.80&mm=34&mn=sn-5hne6n6e&ms=ltu&mt=1751911475&mv=m&mvi=1&pl=24&lsparams=ipbypass,met,mh,mip,mm,mn,ms,mv,mvi,pl,rms&lsig=APaTxxMwRQIhAIPWjegz2wYpKRcDHp13-JkZRLCClMRHZNkeYvYOkIDSAiA3ce4-91TGa9gevI4pnILc8r0H0XRZcMvBkgjdpLEgZQ%3D%3D"
+				type="video/mp4"
+			/>
+		</video>
+		<br />
+		<p>Here is an example of the audio element</p>
+		<audio controls>
+			<source
+				src="https://cdn.trendybeatz.com/audio/TY-Bello-Ft-Greatman-Takit-and-Dr-Sola-Fola-Alade-Time-To-Shine-(TrendyBeatz.com).mp3"
+				type="audio/mpeg"
+			/>
+		</audio>
+		<br />
+		<p>Here is an example of the iframe element (Used for YouTube)</p>
+		<iframe
+			width="560"
+			height="315"
+			src="https://www.youtube.com/embed/zdFzVMFra0w?si=jEBUDwThz88fIhsO"
+			title="YouTube video player"
+			frameborder="0"
+			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+			referrerpolicy="strict-origin-when-cross-origin"
+			allowfullscreen
+		></iframe>
+	</body>
+</html>
