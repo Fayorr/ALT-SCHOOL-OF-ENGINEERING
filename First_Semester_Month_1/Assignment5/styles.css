@@ -5,8 +5,8 @@
 	font-family: 'Poppins', sans-serif;
 }
 body {
-  background-color: #f0f8ff;
-  color: #000;
+	background-color: #f0f8ff;
+	color: #000;
 }
 
 /* Grid Styles */
@@ -36,7 +36,7 @@ body {
 	gap: 10px;
 	padding: 15px;
 }
-.grid-about{
+.grid-about {
 	text-align: center;
 }
 .grid-circle {
@@ -66,7 +66,7 @@ body {
 		width: 90%;
 		height: auto;
 		grid-template-columns: 1fr;
-		grid-template-rows: repeat(4, auto);
+		grid-template-rows: auto auto 1fr 1fr;
 	}
 	.grid-user-container {
 		grid-area: 1 / 1 / 2 / 2;
@@ -76,5 +76,8 @@ body {
 	.grid-circle {
 		justify-self: center;
 	}
-
+	.grid-hobbies,
+	.grid-aspirations {
+		min-height: 150px;
+	}
 }
