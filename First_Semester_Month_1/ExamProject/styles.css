@@ -68,6 +68,19 @@ button:hover {
 		font-size: 20px;
 	}
 }
+@media screen and (max-width: 392px) {
+	#time {
+		font-size: 50px;
+	}
+	.button-container {
+		flex-direction: column;
+		gap: 15px;
+	}
+	button {
+		padding: 20px 50px;
+		font-size: 20px;
+	}
+}
 
 /* Dark Mode */
 
