@@ -1,33 +1,40 @@
-const form = document.getElementById('form');
-const displayUsername = document.getElementById('display-username');
-const displayPassword = document.getElementById('display-password');
+class User {
+	constructor(userName, password, confirmPassword) {
 
-form.addEventListener('submit', function (event) {
-	event.preventDefault();
 
-	const userData = {
-		username: document.getElementById('username').value,
-		password: document.getElementById('password').value,
-		confirmPassword: document.getElementById('confirm-password').value,
-	};
-
-	validateData(userData);
-});
-
-function validateData(userData) {
-	console.log('User Data:', userData);
-
-	if (userData.username.length > 10) {
-		alert('Username must be less than 10 characters or less');
+		this.userName = userName;
+		this.password = password;
+		this.confirmPassword = confirmPassword;
+		// Validate immediately in constructor and throw errors
+		// this.validate();
 	}
-	if (userData.password.length < 6) {
-		alert('Password must be at least 6 characters long');
+	
+
+	validateUserUserDetails() {
+	
+		if (userName.length >= 10) {
+			return false;
+		}
+		return true;
 	}
-	if (userData.password !== userData.confirmPassword) {
-		alert('Passwords do not match!');
-	} else {
-		alert('Form submitted successfully!');
-		displayUsername.textContent = `Username: ${userData.username}`;
-		displayPassword.textContent = `Password: ${userData.password}`;
-	}
+		while (!validateUserName(userName)) {
+			let userName = prompt('Invalid username. Please enter a username with less than 10 characters:');
+			if (userName === null) {
+				return;
+			}
 }
+}
+	}
+
+let displayUser = new User
+	// Method to display user details
+	displayUserDetails() {
+		const userData = {
+			userName: this.userName,
+			email: this.email,
+			passwordLength: this.password.length,
+			createdAt: new Date().toLocaleString(),
+		};
+		console.log('User created successfully:', userData);
+		return userData;
+};

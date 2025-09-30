@@ -1,0 +1,85 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Helvetica, Arial, sans-serif;
+}
+body.light-theme {
+	background-color: #c73935;
+	color: #ffffff;
+}
+
+/* Dark theme variables and styles */
+body.dark-theme {
+	background-color: #333333;
+	color: #ffffff;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+header {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+.button-container {
+	display: flex;
+	flex-direction: row;
+}
+
+button {
+	background-color: #f5d76e;
+	color: #ffffff;
+	border: none;
+	padding: 30px 50px;
+	margin: 0 10px;
+	border-radius: 45px;
+	cursor: pointer;
+	font-size: 26px;
+	transition: background-color 0.3s, color 0.3s;
+	box-shadow: 5px 9px 2px rgba(0, 0, 0, 0.3);
+}
+button:hover {
+	background-color: #ffffff;
+	color: #c73935;
+	transition: background-color 0.3s, color 0.3s;
+}
+.stopwatch {
+	margin: 40px 0;
+}
+#time {
+	font-size: 100px;
+}
+@media screen and (max-width: 592px) {
+	#time {
+		font-size: 80px;
+	}
+	.button-container {
+		flex-direction: column;
+		gap: 15px;
+	}
+	button {
+		padding: 20px 40px;
+		font-size: 20px;
+	}
+}
+
+/* Dark Mode */
+
+/* Theme toggle button styling */
+.theme-toggle {
+	background-color: transparent;
+	border: 1px solid #ccc;
+	padding: 10px 15px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+.theme-toggle:hover {
+	background-color: #e0e0e0;
+}
