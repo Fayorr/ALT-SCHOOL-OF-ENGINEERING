@@ -1,0 +1,17 @@
+{
+	"name": "nodejs-assignment",
+	"version": "1.0.0",
+	"description": "Web and API servers without frameworks",
+	"main": "server.js",
+	"scripts": {
+		"web": "node server.js",
+		"api": "node ../apiServer.js"
+	},
+	"keywords": [
+		"nodejs",
+		"server",
+		"api"
+	],
+	"author": "Your Name",
+	"license": "ISC"
+}
