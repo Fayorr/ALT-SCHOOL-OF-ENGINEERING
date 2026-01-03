@@ -85,13 +85,13 @@ VALUES
 (2, 2, 50.00, 5);
 
 -- selecting (Show commands for getting records from two or more entities)
-SELECT name, total_price, admin_verdict
-FROM orders, users
-WHERE orders.user_id = users.id;
+SELECT users.name, orders.total_price, orders.admin_verdict
+FROM orders
+JOIN users ON orders.user_id = users.id;
 
-SELECT quantity, total_price, admin_verdict
-FROM orders, order_items
-WHERE orders.id = order_items.id; 
+SELECT order_items.quantity, orders.total_price, orders.admin_verdict
+FROM orders
+JOIN order_items ON orders.id = order_items.order_id;
 
 -- updating (Show commands for updating records from two or more entities)
 UPDATE orders
@@ -106,18 +106,15 @@ WHERE order_items.order_id = 2;
 
 
 -- deleting (Show commands for deleting records from two or more entities)
-DELETE FROM order_items 
-WHERE item_id IN (
-	SELECT id FROM items 
-    WHERE category_id = (
-    SELECT id FROM categories WHERE name = 'toothpaste'
-    )
-);
+DELETE FROM items 
+WHERE category_id = (SELECT id FROM categories WHERE name = 'toothpaste');
+
+DELETE FROM items 
+WHERE category_id = (SELECT id FROM categories WHERE name = 'toothpaste');
 
 DELETE FROM orders 
 WHERE user_id IN (
-    SELECT id FROM users 
-    WHERE role = 'user'
+    SELECT id FROM users WHERE role = 'user'
 );
 
 -- Show commands for query records from multiple entities using joins
